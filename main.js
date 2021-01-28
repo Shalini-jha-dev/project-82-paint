@@ -4,7 +4,7 @@ var mouseEvent = "";
 color = "red";
 width_of_line = 2;
 radius = 10;
-addEventListener("mouseDown", my_mouseDown);
+addEventListener("mousedown", my_mouseDown);
 
 function my_mouseDown(e) {
     color = document.getElementById("color").value;
@@ -13,13 +13,13 @@ function my_mouseDown(e) {
     mouseEvent = "mouseDown";
 }
 
-addEventListener("mouseUp", my_mouseUp);
+addEventListener("mouseup", my_mouseUp);
 
 function my_mouseUp(e) {
     mouseEvent = "mouseUp"
 }
 
-addEventListener("mouseLeave", my_mouseLeave);
+addEventListener("mouseleave", my_mouseLeave);
 
 function my_mouseLeave() {
     mouseEvent = "mouseLeave"
